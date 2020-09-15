@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.dozer.DozerBeanMapper;
+import org.dozer.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ import com.viewnext.tiendaDeportes.pilotoTiendaDeportes.integration.repository.A
 public class ArticuloServiceImpl implements ArticuloService{
 
 	@Autowired
-	private DozerBeanMapper dozerBeanMapper;
+	private Mapper dozerBeanMapper;
 	
 	@Autowired
 	private ArticuloEntityRepository articuloEntityRepository; 

@@ -28,7 +28,7 @@ public class DataExampleCreator {
 //		articuloEntityRepository.deleteAll();
 //		ClienteEntityepository.deleteAll();
 				
-		//createClientes();
+		createClientes();
 		createArticulos();
 		
 		return "ok";
@@ -43,7 +43,13 @@ public class DataExampleCreator {
 		cliente.setNombre("Jose");
 		cliente.setApellido("Ruiz");
 		
+		Cliente cliente2 = new Cliente();
+		cliente2.setDni("23546576P");
+		cliente2.setNombre("Rigoberto");
+		cliente2.setApellido("Floripondio");
+		
 		clienteService.create(cliente);
+		clienteService.create(cliente2);
 	}
 	
 	private void createArticulos() {

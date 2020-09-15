@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.dozer.DozerBeanMapper;
+import org.dozer.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +18,7 @@ public class PedidoServiceImpl implements PedidoService{
 
 	
 	@Autowired
-	private DozerBeanMapper dozerBeanMapper;
+	private Mapper dozerBeanMapper;
 	
 	@Autowired
 	private PedidoEntityRepository pedidoEntityRepository;
